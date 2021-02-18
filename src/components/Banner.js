@@ -10,7 +10,7 @@ import ArrowRightOutlinedIcon from "@material-ui/icons/ArrowRightOutlined";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/about2.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/about2.jpg"})`,
     height: "300px",
     width: "100%",
     backgroundSize: "cover",
