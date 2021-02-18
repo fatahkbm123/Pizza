@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Pizza/static/css/main.42a0fa65.chunk.css",
+    "main.js": "/Pizza/static/js/main.e6b65218.chunk.js",
+    "main.js.map": "/Pizza/static/js/main.e6b65218.chunk.js.map",
+    "runtime-main.js": "/Pizza/static/js/runtime-main.c8ea8ee1.js",
+    "runtime-main.js.map": "/Pizza/static/js/runtime-main.c8ea8ee1.js.map",
+    "static/css/2.4e2a3bd7.chunk.css": "/Pizza/static/css/2.4e2a3bd7.chunk.css",
+    "static/js/2.6c4f10f1.chunk.js": "/Pizza/static/js/2.6c4f10f1.chunk.js",
+    "static/js/2.6c4f10f1.chunk.js.map": "/Pizza/static/js/2.6c4f10f1.chunk.js.map",
+    "index.html": "/Pizza/index.html",
+    "static/css/2.4e2a3bd7.chunk.css.map": "/Pizza/static/css/2.4e2a3bd7.chunk.css.map",
+    "static/css/main.42a0fa65.chunk.css.map": "/Pizza/static/css/main.42a0fa65.chunk.css.map",
+    "static/js/2.6c4f10f1.chunk.js.LICENSE.txt": "/Pizza/static/js/2.6c4f10f1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Pizza/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8ea8ee1.js",
+    "static/css/2.4e2a3bd7.chunk.css",
+    "static/js/2.6c4f10f1.chunk.js",
+    "static/css/main.42a0fa65.chunk.css",
+    "static/js/main.e6b65218.chunk.js"
+  ]
+}
