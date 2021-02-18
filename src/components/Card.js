@@ -69,7 +69,7 @@ export default function CardComponent({ data }) {
                     ))}
                   </CardContent>
                 </CardActionArea>
-                <CardActions style={{ marginTop: "-15px" }}>
+                <CardActions>
                   <Tooltip title="Share" arrow>
                     <Button
                       size="small"
