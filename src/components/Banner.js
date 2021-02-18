@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
     boxShadow: "0 0 20px 10px rgba(0,0,0, .2)",
   },
   container: {
