@@ -66,7 +66,7 @@ function About() {
         <Grid container spacing={5} alignItems="center">
           <Grid item xs={12} sm={7}>
             <img
-              src={process.env.PUBLIC_URL + "/assets/about2.jpg"}
+              src={process.env.PUBLIC_URL + "/assets/pizza1.jpg"}
               alt="Images 1"
               width="100%"
               style={{ borderRadius: "20px", boxShadow: "0 0 5px black" }}
