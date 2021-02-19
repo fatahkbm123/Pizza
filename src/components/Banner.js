@@ -10,8 +10,9 @@ import ArrowRightOutlinedIcon from "@material-ui/icons/ArrowRightOutlined";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    marginTop: "40px",
     background: `url(${process.env.PUBLIC_URL + "/assets/about2.jpg"})`,
-    height: "300px",
+    height: "350px",
     width: "100%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -21,10 +22,10 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
-    paddingTop: "40px",
+    paddingTop: "50px",
     paddingBottom: "40px",
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "20px",
+      paddingTop: "30px",
     },
   },
   title: {
@@ -68,8 +69,8 @@ function Banner() {
             <Button
               style={{ marginTop: "20px" }}
               endIcon={<ArrowRightOutlinedIcon />}
-              variant="outlined"
-              color="secondary"
+              variant="contained"
+              color="primary"
             >
               Lebih Banyak
             </Button>
