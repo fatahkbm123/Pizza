@@ -21,12 +21,8 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     display: "flex",
-    flexDirection: "column",
-    paddingTop: "50px",
-    paddingBottom: "40px",
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: "30px",
-    },
+    alignItems: "center",
+    height: "350px",
   },
   title: {
     color: "white",
@@ -55,27 +51,30 @@ function Banner() {
   return (
     <div className={classes.root}>
       <Container className={classes.container}>
-        <Typography variant="h4" className={classes.title}>
-          Manfaat Produk Kami<span>.</span>
-        </Typography>
-        <Typography variant="subtitle1" className={classes.desc}>
-          Pizza memiliki kaya <i>kandungan serat</i>, <i>karbohidrat</i> dan{" "}
-          <i>nutrisi</i> untuk tubuh. Saus tomat ini kaya akan kandungan
-          likopen. Karena dalam proses memasak dan mengolah tomat menjadi saus,
-          kandungan air yang terdapat dalam tomat menguap sehingga konsentrasi
-          antioksidan dalam saus lebih tinggi.
-          <br />
-          <Tooltip title="More!" arrow>
-            <Button
-              style={{ marginTop: "20px" }}
-              endIcon={<ArrowRightOutlinedIcon />}
-              variant="outlined"
-              color="secondary"
-            >
-              Lebih Banyak
-            </Button>
-          </Tooltip>
-        </Typography>
+        <div>
+          <Typography variant="h4" className={classes.title}>
+            Manfaat Produk Kami<span>.</span>
+          </Typography>
+
+          <Typography variant="subtitle1" className={classes.desc}>
+            Pizza memiliki kaya <i>kandungan serat</i>, <i>karbohidrat</i> dan{" "}
+            <i>nutrisi</i> untuk tubuh. Saus tomat ini kaya akan kandungan
+            likopen. Karena dalam proses memasak dan mengolah tomat menjadi
+            saus, kandungan air yang terdapat dalam tomat menguap sehingga
+            konsentrasi antioksidan dalam saus lebih tinggi.
+            <br />
+            <Tooltip title="More!" arrow>
+              <Button
+                style={{ marginTop: "20px" }}
+                endIcon={<ArrowRightOutlinedIcon />}
+                variant="outlined"
+                color="secondary"
+              >
+                Lebih Banyak
+              </Button>
+            </Tooltip>
+          </Typography>
+        </div>
       </Container>
     </div>
   );
