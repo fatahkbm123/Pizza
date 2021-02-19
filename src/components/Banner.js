@@ -69,8 +69,8 @@ function Banner() {
             <Button
               style={{ marginTop: "20px" }}
               endIcon={<ArrowRightOutlinedIcon />}
-              variant="contained"
-              color="primary"
+              variant="outlined"
+              color="secondary"
             >
               Lebih Banyak
             </Button>
