@@ -9,11 +9,14 @@ import {
   makeStyles,
   useScrollTrigger,
   Slide,
+  Fab,
   Tooltip,
 } from "@material-ui/core";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import ScrollTop from "./ScrollTop";
 
 const useStyles = makeStyles({
   appBar: {
@@ -93,6 +96,13 @@ export default function HideAppBar(props) {
         </AppBar>
       </HideOnScroll>
       <Toolbar />
+      <Toolbar id="back-to-top-anchor" />
+
+      <ScrollTop {...props}>
+        <Fab color="primary" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </React.Fragment>
   );
 }

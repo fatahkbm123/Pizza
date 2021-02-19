@@ -13,6 +13,7 @@ import DoneAllIcon from "@material-ui/icons/DoneAll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    overflow: "hidden",
     marginTop: "80px",
   },
 

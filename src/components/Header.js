@@ -11,8 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   container: {
-    // width: "95%",
-    // margin: "0 auto",
+    padding: "0",
     color: "white",
     [theme.breakpoints.down("md")]: {
       "& > h1": {
@@ -20,8 +19,6 @@ const useStyles = makeStyles((theme) => ({
         width: "500px",
         marginBottom: "8px",
       },
-
-      width: "90%",
     },
     [theme.breakpoints.down("sm")]: {
       "& > h1": {
@@ -29,8 +26,6 @@ const useStyles = makeStyles((theme) => ({
         width: "300px",
         marginBottom: "8px",
       },
-
-      width: "90%",
     },
   },
 
@@ -42,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   paragraph: {
-    width: 500,
-    marginTop: "20px",
+    width: 550,
+    marginTop: "30px",
     marginBottom: "50px",
     [theme.breakpoints.down("md")]: {
       width: 400,
@@ -62,27 +57,25 @@ function Header() {
     <div className={classes.root}>
       <Navbar />
 
-      <Container maxWidth="lg">
-        <div className={classes.container}>
-          <h1 className={classes.titleContainer}>
-            Yang Anda butuhkan hanyalah pizza.
-          </h1>
-          <Typography variant="subtitle1" className={classes.paragraph}>
-            Pizza Keliling Sekolah, pizza murah dan terjamin terjangkau oleh
-            kebersihannya. tidak juga kebersihannya rasanya pun Mantap Djiwa,
-            banyak aneka ragam dan rasa yang kami buat, dan juga pizza ini sudah
-            terdiri dari kami sekolah SMK hingga sekarang. Tunggu apalagi buruan
-            beli keburu habis.
-          </Typography>
-          <Button
-            style={{ textTransform: "capitalize" }}
-            variant="contained"
-            color="secondary"
-            endIcon={<ShoppingCartIcon />}
-          >
-            Beli Sekarang
-          </Button>
-        </div>
+      <Container className={classes.container}>
+        <h1 className={classes.titleContainer}>
+          Yang Anda butuhkan hanyalah pizza.
+        </h1>
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Pizza Keliling Sekolah, pizza murah dan terjamin terjangkau oleh
+          kebersihannya. tidak juga kebersihannya rasanya pun Mantap Djiwa,
+          banyak aneka ragam dan rasa yang kami buat, dan juga pizza ini sudah
+          terdiri dari kami sekolah SMK hingga sekarang. Tunggu apalagi buruan
+          beli keburu habis.
+        </Typography>
+        <Button
+          style={{ textTransform: "capitalize" }}
+          variant="contained"
+          color="secondary"
+          endIcon={<ShoppingCartIcon />}
+        >
+          Beli Sekarang
+        </Button>
       </Container>
     </div>
   );
