@@ -37,7 +37,7 @@ function Product() {
   }, [page]);
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ marginTop: "80px" }}>
       <Container>
         <Typography
           variant="h4"

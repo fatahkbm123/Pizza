@@ -13,6 +13,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 const useStyles = makeStyles({
   root: {
     width: "100%",
+    boxShadow: "0 0 5px rgba(0,0,0,.3)",
   },
   media: {
     height: 160,
@@ -24,7 +25,7 @@ export default function CardComponent({ data }) {
   const classes = useStyles();
   return (
     <>
-      <Grid container spacing={3} justify="center">
+      <Grid container spacing={1} justify="center">
         {data.map((item, index) => {
           const tags = item.tags.split(",");
           return (
@@ -58,8 +59,10 @@ export default function CardComponent({ data }) {
                       <Chip
                         key={index}
                         style={{
-                          margin: "12px 2px",
+                          marginTop: "12px",
+                          marginRight: "3px",
                           textTransform: "capitalize",
+                          fontSize: "12px",
                         }}
                         variant="outlined"
                         size="small"
